@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokeDex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gxG-vw-oL4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="barTintColor" red="0.65254681339999998" green="0.54736266420000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-scene---drawing" translatesAutoresizingMaskIntoConstraints="NO" id="vw8-Ji-ZWf" userLabel="Background Image">
+                                <rect key="frame" x="20.666666666666657" y="180.00000000000003" width="372.66666666666674" height="372.66666666666674"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vw8-Ji-ZWf" secondAttribute="height" multiplier="1:1" id="SDb-dX-bXU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0XO-TV-oQf" userLabel="Sprite Image">
+                                <rect key="frame" x="20.666666666666657" y="180.00000000000003" width="372.66666666666674" height="372.66666666666674"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WSM-Aw-DTb">
+                                <rect key="frame" x="20.666666666666657" y="560.66666666666663" width="372.66666666666674" height="93"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlO-9q-H0t">
+                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tr-96-0nu">
+                                        <rect key="frame" x="0.0" y="36.333333333333371" width="372.66666666666669" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1s3-ts-Wzj">
+                                        <rect key="frame" x="0.0" y="72.666666666666742" width="372.66666666666669" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gxG-vw-oL4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0wg-I0-Vn3"/>
+                            <constraint firstItem="vw8-Ji-ZWf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="4k6-cc-cY4"/>
+                            <constraint firstItem="vw8-Ji-ZWf" firstAttribute="top" secondItem="gxG-vw-oL4" secondAttribute="bottom" constant="80" id="9YX-4t-jLD"/>
+                            <constraint firstItem="0XO-TV-oQf" firstAttribute="width" secondItem="vw8-Ji-ZWf" secondAttribute="width" id="Cud-w5-IX9"/>
+                            <constraint firstItem="gxG-vw-oL4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HYK-OH-nzF"/>
+                            <constraint firstItem="0XO-TV-oQf" firstAttribute="height" secondItem="vw8-Ji-ZWf" secondAttribute="height" id="Lef-P3-SXE"/>
+                            <constraint firstItem="vw8-Ji-ZWf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Q0H-Zh-s3y"/>
+                            <constraint firstItem="0XO-TV-oQf" firstAttribute="centerX" secondItem="vw8-Ji-ZWf" secondAttribute="centerX" id="RHY-Rr-fwg"/>
+                            <constraint firstItem="WSM-Aw-DTb" firstAttribute="top" secondItem="vw8-Ji-ZWf" secondAttribute="bottom" constant="8" id="U8I-qJ-tNu"/>
+                            <constraint firstItem="WSM-Aw-DTb" firstAttribute="width" secondItem="vw8-Ji-ZWf" secondAttribute="width" id="XZz-go-HMa"/>
+                            <constraint firstItem="WSM-Aw-DTb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fJf-4T-B6D"/>
+                            <constraint firstItem="0XO-TV-oQf" firstAttribute="centerY" secondItem="vw8-Ji-ZWf" secondAttribute="centerY" id="hSE-id-cy4"/>
+                            <constraint firstItem="gxG-vw-oL4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vcm-Xp-c9T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-scene---drawing" width="1024" height="768"/>
+    </resources>
+</document>
